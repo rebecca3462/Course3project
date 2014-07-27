@@ -144,7 +144,7 @@
                     ~ variable)
   
   ## Export Tidy data set to Working directory
-  write.table(myFinal, "./tidy_data.csv", sep=",") 
+  write.table(myFinal, "./tidy_data.txt", sep=",") 
   
   ##clear memory of all but 1st and 2nd data set
   myData <- c("mySet","myFinal")
