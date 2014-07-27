@@ -19,9 +19,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 1. Download Dataset from link above
 2. Unzip contents of dataset into working directory
   * Make sure the folder inside the working directory is labled: "UCI HAR Dataset"
-4. Execute run\_analysis.R to create the summarized data set named tidy_data.csv 
-  * Note: this repository already contains the output from the anlysis in the file tidy_data.csv. 
-  * If you check this repository out in full to your working directory, runing script again will overwrite this file with a new file containing the results of the run_analysis.R script
+4. Execute run\_analysis.R to create the summarized data set named tidy_data.txt 
+
   
 ### Processing Performed
 
@@ -89,7 +88,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
     c.) Loads the library plyr in order to utlize ddply  
     d.) Using ddply, groups the data by Subject, Activity and Measurement taking the mean of the value column  
     e.) Using the dcast command, expands the data back out so that all the measurements are in their own column again in a data frame named myFinal  
-    f.) Writes this data frame into a file named tidy_data.csv which is created in the working directory  
+    f.) Writes this data frame into a file named tidy_data.txt which is created in the working directory  
     g.) Clears memory of all but the first dataset and the new tidy dataset  
        * This is in case the personing running the code would like to perform analysis on either of the sets following the running of this script
 
