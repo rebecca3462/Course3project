@@ -94,5 +94,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
        * This is in case the personing running the code would like to perform analysis on either of the sets following the running of this script
 
 ## Code Book 
-[link]: https://
+[link]: https://github.com/rebecca3462/Course3project/blob/master/CodeBook.md
+
 
