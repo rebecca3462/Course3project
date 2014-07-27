@@ -51,8 +51,8 @@
   myRawCols <- read.table(featureLoc)
   
   #Extract lines with relevent terms
-  myMeancols <- grep("mean()",myRawCols$V2)
-  myStdcols <- grep("std()",myRawCols$V2)
+  myMeancols <- grep("mean\\(\\)",myRawCols$V2)
+  myStdcols <- grep("std\\(\\)",myRawCols$V2)
   
   ##Create Index variable that will be the column index
 
@@ -80,7 +80,7 @@
   
   ## Reordering dataset to put subject first and activity 
   ## second removing extra column with Activity Index
-  mySet <- myMerge[,c(82,2:81)]
+  mySet <- myMerge[,c(69,2:68)]
 
   
   ##clear memory of all but Full data
@@ -95,8 +95,8 @@
   myRawCols <- read.table(featureLoc)
   
   #Extract lines with relevent terms
-  myMeancols <- grep("mean()",myRawCols$V2)
-  myStdcols <- grep("std()",myRawCols$V2)
+  myMeancols <- grep("mean\\(\\)",myRawCols$V2)
+  myStdcols <- grep("std\\(\\)",myRawCols$V2)
   myIndex <- c(myMeancols,myStdcols) 
   myIndex <- sort(myIndex)
   myList <- myRawCols[myIndex,]
@@ -112,7 +112,6 @@
   mySub <- gsub("BodyBody","Body",mySub)
   mySub <- gsub("\\-mean\\(\\)","Mean",mySub)
   mySub <- gsub("\\-std\\(\\)","StandardDeviation",mySub)
-  mySub <- gsub("\\-meanFreq\\(\\)","MeanFrequency",mySub)
   mySub <- gsub("\\-X","AxisX",mySub)
   mySub <- gsub("\\-Y","AxisY",mySub)
   mySub <- gsub("\\-Z","AxisZ",mySub)
@@ -132,7 +131,7 @@
   ## in one column called variable
   library(reshape2)
   myMelt <- melt(mySet,id=c("SubjectNumber","Activity")
-                 ,measure.vars=3:81)
+                 ,measure.vars=3:68)
   
   ## Calculate the mean of the values by Measurement
   library(plyr)
@@ -146,3 +145,7 @@
   
   ## Export Tidy data set to Working directory
   write.table(myFinal, "./tidy_data.csv", sep=",") 
+  
+  ##clear memory of all but 1st and 2nd data set
+  myData <- c("mySet","myFinal")
+  rm(list=(ls()[ls()!=myData]))
