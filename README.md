@@ -93,7 +93,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
     g.) Clears memory of all but the first dataset and the new tidy dataset  
        * This is in case the personing running the code would like to perform analysis on either of the sets following the running of this script
 
-## Code Book 
-[link]: https://github.com/rebecca3462/Course3project/blob/master/CodeBook.md
+## Code Book
+https://github.com/rebecca3462/Course3project/blob/master/CodeBook.md
 
 

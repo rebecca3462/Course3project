@@ -1,4 +1,4 @@
-#Code Book for Final Tidy Data"
+#Code Book for Final Tidy Data
 
 ### Original Dataset Properties
 This data was from a study performed on 30 indivduals wearing a Samsung Galaxy Smartphone with an accelerometer and gyroscope. Measurements were taken from the devices as the 30 Subjects performed 6 different activities. Various statistical calculations were performed on these measurements and recorded for each subject and activity.
