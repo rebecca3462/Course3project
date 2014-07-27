@@ -21,7 +21,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
   * Make sure the folder inside the working directory is labled: "UCI HAR Dataset"
 4. Execute run\_analysis.R to create the summarized data set named tidy_data.txt 
 
-  
+## Code Book for output of tidy data set
+https://github.com/rebecca3462/Course3project/blob/master/CodeBook.md
+* Note: GitHub is not displaying the data for all 68 variables for some reason I cannot figure out, if you click Raw you can see that the descriptions go all the way through 68. If you can figure out why this is happening and let me know in the grading comments that would be reall helpful. 
+
 ### Processing Performed
 
 #### run_anllysis.R
@@ -92,7 +95,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
     g.) Clears memory of all but the first dataset and the new tidy dataset  
        * This is in case the personing running the code would like to perform analysis on either of the sets following the running of this script
 
-## Code Book
-https://github.com/rebecca3462/Course3project/blob/master/CodeBook.md
+
 
 
