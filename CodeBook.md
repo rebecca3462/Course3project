@@ -19,14 +19,11 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
      
 #### Tidy Data Set Properties
 
-**Each Record Represents:**
-
+**Each Record Represents:**  
 * A combination of Subject and Activity with the mean of the statistics on the measurements for each combination
 
-**Properties**
-
-* Each subject has 6 records, one for each activity
-
+**Properties**  
+* Each subject has 6 records, one for each activity  
 * The subjects actually performed the activities more than once in the orignal study so these measurements represent the mean of the orignal statistics 
 
 
